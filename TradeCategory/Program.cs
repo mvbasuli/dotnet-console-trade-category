@@ -21,43 +21,8 @@ namespace TradeCategory
 
             var categoryService = serviceProvider.GetService<ICategoryService>();
 
-
-            categoryService.CategorizeTrades();
-
-
-            //var categoryFactory = serviceProvider.GetService<ICategoryFactory>();
-
-            //Trade trade = new Trade(1000000.3434, "Public", DateTime.Now);
-            //ICategory category = categoryFactory.CreateCategory(trade, DateTime.Now.AddDays(50));
-
-
-            //string path = @"c:\temp\MyTest.txt";
-
-            //// This text is added only once to the file.
-            //if (!File.Exists(path))
-            //{
-            //    // Create a file to write to.
-            //    string createText = "A categoria é: " + category.Name + Environment.NewLine;
-            //    File.WriteAllText(path, createText, Encoding.UTF8);
-            //}
-
-            //// This text is always added, making the file longer over time
-            //// if it is not deleted.
-            //string appendText = "This is extra text" + Environment.NewLine;
-            //File.AppendAllText(path, appendText, Encoding.UTF8);
-
-            //// Open the file to read from.
-            //string readText = File.ReadAllText(path);
-            //Console.WriteLine(readText);
-
-
-
-            //Console.WriteLine("A categoria é:" + category.Name);
+            if (categoryService != null)
+                categoryService.CategorizeTrades();
         }
-
-        //private static void ConfigureServices(ServiceCollection serviceCollection)
-        //{
-        //    throw new NotImplementedException();
-        //}
     }
 }
