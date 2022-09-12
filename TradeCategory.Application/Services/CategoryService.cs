@@ -10,18 +10,15 @@ namespace TradeCategory.Application.Services
     {
         private readonly ICategoryFactory _categoryFactory;
         private readonly IConsoleService _consoleService;
-        private readonly IIOService _iOService;
 
         public CategoryService(
             ICategoryFactory categoryFactory,
-            IConsoleService consoleService,
-            IIOService iOService
+            IConsoleService consoleService
 
             )
         {
             _categoryFactory = categoryFactory;
             _consoleService = consoleService;
-            _iOService = iOService;
         }
 
         public void CategorizeTrades()
