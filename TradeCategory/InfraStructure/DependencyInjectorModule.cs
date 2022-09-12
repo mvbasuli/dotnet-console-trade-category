@@ -12,7 +12,6 @@ namespace TradeCategory.InfraStructure
         {
             services.AddSingleton<ICategoryFactory, CategoryFactory>();
             services.AddTransient<IConsoleService, ConsoleService>();
-            services.AddTransient<IIOService, IOService>();
             services.AddTransient<ICategoryService, CategoryService>();
         }
     }
