@@ -14,7 +14,6 @@ namespace TradeCategory
     {
         static void Main(string[] args)
         {
-            //setup our DI
             var serviceCollection = new ServiceCollection();
             serviceCollection.ConfigureServices();
             var serviceProvider  = serviceCollection.BuildServiceProvider();
